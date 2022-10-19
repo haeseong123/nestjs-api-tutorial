@@ -1,5 +1,5 @@
 // https://www.youtube.com/watch?v=GHTA143_b-s
-// 54.45
+// 1:34:35
 import { Body, Controller, ParseIntPipe, Post } from "@nestjs/common";
 import { AuthService } from "./auth.service";
 import { AuthDto } from "./dto";
@@ -10,22 +10,14 @@ export class AuthController {
     constructor(private authService: AuthService) { }
 
     @Post('signup')
-    signup(
-        @Body() dto: AuthDto
-    ) {
-        console.log(
-            dto.email,
-            typeof dto.email,
-            dto.password,
-            typeof dto.password
-        );
+    signup(@Body() dto: AuthDto) {
+        console.log(dto);
 
-
-        return this.authService.signup()
+        return this.authService.signup(dto)
     }
 
     @Post('signin')
-    signin() {
-        return this.authService.signin()
+    signin(@Body() dto: AuthDto) {
+        return this.authService.signin(dto)
     }
 }
