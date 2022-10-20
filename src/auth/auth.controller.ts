@@ -1,6 +1,6 @@
 // https://www.youtube.com/watch?v=GHTA143_b-s
 // 1:34:35
-import { Body, Controller, ParseIntPipe, Post } from "@nestjs/common";
+import { Body, Controller, Post } from "@nestjs/common";
 import { AuthService } from "./auth.service";
 import { AuthDto } from "./dto";
 
@@ -18,6 +18,7 @@ export class AuthController {
 
     @Post('signin')
     signin(@Body() dto: AuthDto) {
+        // Request.user
         return this.authService.signin(dto)
     }
 }
