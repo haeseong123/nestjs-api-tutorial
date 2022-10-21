@@ -1,6 +1,6 @@
 // https://www.youtube.com/watch?v=GHTA143_b-s
-// 1:34:35
-import { Body, Controller, Post } from "@nestjs/common";
+// 2:11:58
+import { Body, Controller, HttpCode, HttpStatus, Post } from "@nestjs/common";
 import { AuthService } from "./auth.service";
 import { AuthDto } from "./dto";
 
@@ -11,11 +11,10 @@ export class AuthController {
 
     @Post('signup')
     signup(@Body() dto: AuthDto) {
-        console.log(dto);
-
         return this.authService.signup(dto)
     }
-
+    
+    @HttpCode(HttpStatus.OK)
     @Post('signin')
     signin(@Body() dto: AuthDto) {
         // Request.user
