@@ -22,6 +22,14 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## 관련 질문
+
+- [NestJS 소개](https://hs-archive.tistory.com/69)
+- [CLI?](https://hs-archive.tistory.com/65)
+- [dist폴더가 무엇일까](https://hs-archive.tistory.com/66)
+- [의존성 주입 - dependency injection](https://hs-archive.tistory.com/67)
+- [커플링(coupling), 디커플링(decoupling)](https://hs-archive.tistory.com/68)
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
