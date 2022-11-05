@@ -33,6 +33,7 @@
 - [dist폴더가 무엇일까](https://hs-archive.tistory.com/66)
 - [의존성 주입 - dependency injection](https://hs-archive.tistory.com/67)
 - [커플링(coupling), 디커플링(decoupling)](https://hs-archive.tistory.com/68)
+- [SOLID 원칙](https://hs-archive.tistory.com/73)
 
 ## Description
 
